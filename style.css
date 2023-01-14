@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color: rgb(54, 1, 1);
+    color: aliceblue;
+    height: 60px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    text-align: center;
+    
+}
+
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: sans-serif;
+}
+
+.box{
+    border: solid 2px black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: darkgoldenrod;
+    
+}
+.gameinfo h2{
+    padding-left: 26px;
+}
+
+.info{
+    
+    font-size: 25px;
+    color: blue;
+    padding: 0 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagebox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0 {
+    border-left: 0;
+}
+.bt-0 {
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    
+    margin-top: 10px;
+    margin-left: 23px;
+    padding: 1px 18px;
+    background-color: cadetblue;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#reset:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 950px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+        .gameinfo h2{
+            font-size: 1.8rem;
+        }
+        .container{
+            grid-template-columns: repeat(3,20vw);
+            grid-template-rows: repeat(3,20vw);
+        }
+}
