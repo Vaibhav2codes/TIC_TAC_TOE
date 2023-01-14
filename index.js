@@ -59,5 +59,5 @@ reset.addEventListener('click',()=>{
     isgameover=false
     gameover.play()
     document.getElementsByClassName("info")[0].innerText="Turn for " + turn;
-    document.querySelector(".imagebox").getElementsByTagName('img')[0].style.width = "0 px"
+    document.querySelector(".imagebox").getElementsByTagName('img')[0].style.width = "0px"
 })
