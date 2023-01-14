@@ -28,6 +28,7 @@ const checkWin = () =>{
             document.querySelector(".info").innerText = boxtexts[e[0]].innerText + " WON"
             isgameover= true
             document.querySelector(".imagebox").getElementsByTagName('img')[0].style.width = "200px"
+            gameover.play();
         }
     })
 }
@@ -56,6 +57,7 @@ reset.addEventListener('click',()=>{
     });
     turn = "X"
     isgameover=false
+    gameover.play()
     document.getElementsByClassName("info")[0].innerText="Turn for " + turn;
     document.querySelector(".imagebox").getElementsByTagName('img')[0].style.width = "0 px"
 })
